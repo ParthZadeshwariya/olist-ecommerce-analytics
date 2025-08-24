@@ -33,9 +33,15 @@ FROM 'csv_data\product_category_name_translation.csv'
 DELIMITER ','
 CSV HEADER;
 
+COPY order_items
+FROM 'csv_data\olist_order_items_dataset.csv'
+DELIMITER ','
+CSV HEADER;
+
 -- checking data load
---SELECT * FROM customers LIMIT 10;
+-- SELECT * FROM customers LIMIT 10;
 -- SELECT * FROM orders LIMIT 10;
+-- SELECT * FROM order_items LIMIT 10;
 -- SELECT * FROM products LIMIT 10;
 -- SELECT * from payments LIMIT 10;
 -- SELECT * from sellers LIMIT 10;

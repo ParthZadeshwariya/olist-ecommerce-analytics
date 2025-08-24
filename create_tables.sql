@@ -59,3 +59,13 @@ CREATE TABLE product_category_translation (
     product_category_name VARCHAR(100) PRIMARY KEY,
     product_category_name_english VARCHAR(100)
 );
+
+CREATE TABLE order_items (
+    order_id VARCHAR,
+    order_item_id INT,
+    product_id VARCHAR,
+    seller_id VARCHAR,
+    shipping_limit_date TIMESTAMP,
+    price NUMERIC,
+    freight_value NUMERIC
+);
